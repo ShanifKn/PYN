@@ -1,18 +1,15 @@
-import { Suspense, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import reactLogo from './assets/react.svg'
 import "./App.css";
-import Home from "./components/movieList";
-import MovieDetail from "./components/movieDetail";
+import HomePage from "./Pages/HomePage";
+import MoviePage from "./Pages/MoviePage";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/movie/:id" element={<MovieDetail />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/movie/:id" element={<MoviePage />} />
         </Routes>
       </BrowserRouter>
     </div>

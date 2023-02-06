@@ -1,2 +1,0 @@
-export const FETCH_MOVIES = "GET_MOVIES";
-export const FETCH_MOVIE_DETAILS = "GET_MOVIE_DETAILS";

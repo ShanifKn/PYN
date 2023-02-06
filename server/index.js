@@ -13,6 +13,7 @@ app.use(cors());
 //*  ROUTES   *//
 app.use("/api", fetchRoute);
 
+// * HTTP SERVER *//
 app.listen(3001, () => {
   console.log("Server running on http://localhost:3001");
 });

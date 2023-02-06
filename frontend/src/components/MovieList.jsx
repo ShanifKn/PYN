@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getMovies } from "../redux-store/movieSlice";
-import { Header } from "./Header";
 import Card from "./Card";
 
-const Home = () => {
+const MovieList = () => {
   const movies = useSelector((state) => state.movies.list);
   const dispatch = useDispatch();
 
@@ -39,4 +38,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MovieList;
