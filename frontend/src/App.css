@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 15px 0 15px;
+  margin: auto;
+}
+
+/* Header Styles */
+header {
+  background-color: black;
+  padding: 10px 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 150px;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-left: 150px;
+}
+
+.movie-card {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  border: 0;
+  display: block;
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+.movie-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-title {
+  font-size: 42px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-poster {
+  margin-top: 20px;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 450px;
+}
+
+.movie-description {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+}
