@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 
 const MovieDetail = () => {
   const { id } = useParams();
-
   const movie = useSelector((state) => state.movies.details[id].data);
 
   return (
@@ -20,6 +19,8 @@ const MovieDetail = () => {
               />
             </div>
             <p className="movie-description">{movie.overview}</p>
+            <h4>Release date :{movie.release_date}</h4>
+            <h4>Rating: {movie.vote_average}</h4>
           </div>
         ) : (
           <p>Loading...</p>

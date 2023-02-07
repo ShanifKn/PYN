@@ -31,14 +31,14 @@ header a:hover {
 }
 
 .movie-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   grid-gap: 30px;
-  margin-left: 150px;
 }
 
 .movie-card {
-  width: 100%;
+  width: 410px;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -46,10 +46,23 @@ header a:hover {
   display: block;
 }
 
+.movie-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
 .movie-card img {
   width: 100%;
   display: block;
+  filter: brightness(120%);
+  filter: contrast(120%);
+  filter: drop-shadow(8px 8px 8px rgb(1, 11, 1));
 }
+
 .movie-details-container {
   display: flex;
   flex-direction: column;
@@ -70,6 +83,9 @@ header a:hover {
 .movie-poster img {
   width: 100%;
   height: 450px;
+  filter: brightness(120%);
+  filter: contrast(120%);
+  filter: drop-shadow(10px 10px 10px rgb(1, 11, 1));
 }
 
 .movie-description {

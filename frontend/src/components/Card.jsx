@@ -16,10 +16,14 @@ const Card = ({ title, id, img }) => {
   return (
     <div className="movie-card">
       <img src={`https://image.tmdb.org/t/p/w500/${img}`} alt="Poster" />
-      <h5>{title}</h5>
-      <button className="btn" onClick={() => handleClick(id)}>
-        View More
-      </button>
+      <div className="movie-card-title">
+        <h3>{title}</h3>
+        <div>
+          <button className="btn" onClick={() => handleClick(id)}>
+            View More
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

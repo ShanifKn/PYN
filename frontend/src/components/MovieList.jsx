@@ -16,7 +16,7 @@ const MovieList = () => {
       <div className="movie-page">
         <div className="container">
           <div className="header">
-            <h1 className="heading"> Movies list</h1>
+            <h1 className="heading"> Movies List</h1>
           </div>
           {movies.length > 0 ? (
             <div className="movie-grid">
